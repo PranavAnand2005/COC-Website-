@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="image/supercell_logo.png">
+  <title>Clash Of Clans x Supercell</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body id="top">
+  <header class="header">
+    <div class="header-bottom skewBg" data-header>
+      <div class="container">
+        <a href="#" class="logo" data-aos="zoom-in" data-aos-duration="1000">SUP ERC ELL</a>
+        <nav class="nav-bar" data-navbar>
+          <ul class="navbar-list">
+            <li class="navbar-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100"><a href="#home"
+                class="navbar-link skewBg" data-nav-link>Home</a></li>
+            <li class="navbar-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"><a href="#features"
+                class="navbar-link skewBg" data-nav-link>Features</a></li>
+            <li class="navbar-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300"><a href="#"
+                class="navbar-link skewBg" data-nav-link>Live</a></li>
+            <li class="navbar-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"><a href="#"
+                class="navbar-link skewBg" data-nav-link>Shop</a></li>
+            <li class="navbar-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500"><a href="#"
+                class="navbar-link skewBg" data-nav-link>Blog</a></li>
+            <li class="navbar-item" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"><a href="#"
+                class="navbar-link skewBg" data-nav-link>Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="header-actions">
+          <button class="cart-btn" aria-label="cart" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="700">
+            <ion-icon name="cart"></ion-icon>
+            <span class="cart-badge">0</span>
+          </button>
+          <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+            <ion-icon name="menu-sharpzz" class="menu"></ion-icon>
+            <ion-icon name="close-sharp" class="close"></ion-icon>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <section class="section hero" id="home" aria-label="home" style="background-image:url(image/hero.bg.jpg);">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle" data-aos="zoom-in-right" data-aos-duration="1000" data-aos-delay="900">Clash Of
+              Clans</p>
+            <h1 class="hero-title h1" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1100">Create <span
+                class="span">Manage</span>Matches</h1>
+            <p class="hero-text" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1300"
+              style="color: hsl(277, 25%, 10%);">
+              To stay on top of your game, keep an eye on the in-game Features section. Follow us on social media for
+              the latest chatter and sneak peeks on what the team is working on. Don't be a stranger and join the
+              conversation.
+            </p>
+
+            <button class="btn skewBg" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="1500">Read
+              More</button>
+          </div>
+
+          <figure class="hero-brnner img-holder">
+            <img src="image/hero-banner.png" alt="hero-banner" class="w-100" data-aos="zoom-in-left"
+              data-aos-duration="2500">
+          </figure>
+        </div>
+      </section>
+    </article>
+  </main>
+
+<!-- embalme -->
+
+  <div class="emblem-gap">
+    <img src="image/supercell_logo.png" alt="Supercell Logo" class="supercell-logo">
+    <img src="image/emblame.png" alt="Emblem" class="emblem-image">
+</div>
+
+<!-- features section -->
+
+<section class="features-section" id="features" aria-label="features">
+  <p class="section-title">Your Clash Journey Starts Here</p>
+  <h1>LEAD YOUR CLAN TO VICTORY!</h1>
+
+  <div class="features-image-wrapper">
+    <!-- Left Balloon Wrapper -->
+    <div class="balloon-wrapper">
+      <img src="image/bomb-ballon.png" alt="Balloon Left" class="floating-balloon left">
+    </div>
+
+    <!-- Main Image + H4 -->
+    <div class="image-center-wrapper">
+      <div class="image-box">
+        <img src="image/features.png" alt="feature-image">
+      </div>
+      <h4>Game of Games begins - your life, now an epic MMORPG</h4>
+    </div>
+
+    <!-- Right Balloon Wrapper -->
+    <div class="balloon-wrapper">
+      <img src="image/bomb-ballon.png" alt="Balloon Right" class="floating-balloon right">
+      <p class="features-text">
+        Answer the call of the mustache! Join the international fray that is Clash of Clans and the Clash® universe.
+        Customize your village, build an army and crush your opponents.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Music Player -->
+  <div class="music-player" id="musicPlayer">
+    <img src="image/disk-icon.png" alt="Music Disk" class="disk" id="diskIcon">
+  </div>
+
+  <audio id="bgMusic" loop>
+    <source src="music/clash-of-clans-theme.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <script src="script.js" defer></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({ offseet: 0 });
+  </script>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+  <!-- Hover sound -->
+  <audio id="hoverSound">
+    <source src="music/hover.mp3" type="audio/mpeg">
+  </audio>
+
+  <!-- Click sound -->
+  <audio id="clickSound">
+    <source src="music/click.mp3" type="audio/mpeg">
+  </audio>
+
+</body>
+
+</html>
