@@ -4,11 +4,28 @@
     box-sizing: border-box;
 }
 
+html {
+    overflow-y: scroll;           /* keeps scrolling working */
+    scrollbar-width: none;        /* Firefox */
+    -ms-overflow-style: none;     /* IE 10+ */
+}
+
+html::-webkit-scrollbar {
+    display: none;                /* Chrome, Safari, Edge */
+}
+
 body {
     width: 100%;
     min-height: 100vh; /* allows content to grow and scroll */
-    overflow-x: hidden; /* block sideways scroll, allow vertical */
+    overflow-y: scroll; /* keep scrolling enabled */
+    overflow-x: hidden;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE 10+ */
     cursor: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="48" viewBox="0 0 24 24"><path fill="%23E9A401" stroke="%23E9A401" stroke-width="2.5" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>'), auto;
+}
+
+body::-webkit-scrollbar { 
+    display: none; /* Chrome, Safari, Edge */
 }
 
 /* url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"><path fill="%23E9A401" stroke="%23242533" stroke-width="2" d="M5.5 3.21V20.8c0 .45.54.67.85.35l4.86-4.86a.5.5 0 0 1 .35-.15h6.87a.5.5 0 0 0 .35-.85L6.35 2.85a.5.5 0 0 0-.85.35Z"></path></svg>') */
